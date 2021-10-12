@@ -1,10 +1,12 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
-export default function index() {
+interface ChatScreenProps {}
+
+export const ChatScreen: React.FC<ChatScreenProps> = () => {
   return (
     <View>
-      <Text>Chat Screen</Text>
+      <Text>ChatScreen</Text>
     </View>
   );
-}
+};
