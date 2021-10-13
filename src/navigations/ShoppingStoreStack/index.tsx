@@ -14,7 +14,7 @@ import {ShoppingItemDetailsScreen} from '../../screens/ShoppingItemDetailsScreen
 
 const Stack = createNativeStackNavigator<ShoppingStoreStackParamsParamList>();
 
-const AppNavigator = () => {
+const ShoppingStoreStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -40,4 +40,4 @@ const AppNavigator = () => {
   );
 };
 
-export default AppNavigator;
+export default ShoppingStoreStack;

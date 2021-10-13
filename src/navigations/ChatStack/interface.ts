@@ -9,10 +9,16 @@ export enum ChatParams {
   ChatSettings = 'ChatSettings',
 }
 
+// export type ChatParamList = {
+//   [ChatParams.Chat]: NO_PARAMS;
+//   [ChatParams.ChatList]: NO_PARAMS;
+//   [ChatParams.ChatSettings]: NO_PARAMS;
+// };
+
 export type ChatParamList = {
-  [ChatParams.Chat]: NO_PARAMS;
-  [ChatParams.ChatList]: NO_PARAMS;
-  [ChatParams.ChatSettings]: NO_PARAMS;
+  Chat: NO_PARAMS;
+  ChatList: NO_PARAMS;
+  ChatSettings: NO_PARAMS;
 };
 
 export type RootNavigationProp<P extends ChatParams> = StackNavigationProp<

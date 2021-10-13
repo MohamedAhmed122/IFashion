@@ -10,14 +10,14 @@ import {ChatSettingsScreen} from '../../screens/ChatSettingsScreen';
 
 const Stack = createNativeStackNavigator<ChatParamList>();
 
-const AppNavigator = () => {
+const ChatStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name={ChatParams.ChatList} component={ChatListScreen} />
       <Stack.Screen name={ChatParams.Chat} component={ChatScreen} />
+      <Stack.Screen name={ChatParams.ChatList} component={ChatListScreen} />
       <Stack.Screen
         name={ChatParams.ChatSettings}
         component={ChatSettingsScreen}
@@ -26,4 +26,4 @@ const AppNavigator = () => {
   );
 };
 
-export default AppNavigator;
+export default ChatStack;

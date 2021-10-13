@@ -1,5 +1,5 @@
 import {ShoppingStoreStackParams} from './../ShoppingStoreStack/interface';
-import {FashionistaParams} from './../FashionistaStack/interface';
+import {FashionistaParams} from '../FashionStack/interface';
 import {ProfileParams} from './../ProfileStack/interface';
 import {CheckoutParams} from './../CheckoutStack/interface';
 import {ChatParams} from './../ChatStack/interface';
