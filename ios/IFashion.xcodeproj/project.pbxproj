@@ -14,6 +14,15 @@
 		6172F2D35A4C3AA820D92908 /* libPods-IFashion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-IFashion.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-IFashion-IFashionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-IFashion-IFashionTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A6A90A6C27174401004FD55B /* NotoSansMono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6A90A6327174400004FD55B /* NotoSansMono-Light.ttf */; };
+		A6A90A6D27174401004FD55B /* NotoSansMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6A90A6427174401004FD55B /* NotoSansMono-Regular.ttf */; };
+		A6A90A6E27174401004FD55B /* NotoSansMono-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6A90A6527174401004FD55B /* NotoSansMono-Thin.ttf */; };
+		A6A90A6F27174401004FD55B /* NotoSansMono-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6A90A6627174401004FD55B /* NotoSansMono-ExtraLight.ttf */; };
+		A6A90A7027174401004FD55B /* NotoSansMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6A90A6727174401004FD55B /* NotoSansMono-Medium.ttf */; };
+		A6A90A7127174401004FD55B /* NotoSansMono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6A90A6827174401004FD55B /* NotoSansMono-SemiBold.ttf */; };
+		A6A90A7227174401004FD55B /* NotoSansMono-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6A90A6927174401004FD55B /* NotoSansMono-Black.ttf */; };
+		A6A90A7327174401004FD55B /* NotoSansMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6A90A6A27174401004FD55B /* NotoSansMono-Bold.ttf */; };
+		A6A90A7427174401004FD55B /* NotoSansMono-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6A90A6B27174401004FD55B /* NotoSansMono-ExtraBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +49,15 @@
 		6423831EA8574132BED9D8CC /* libPods-IFashion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IFashion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-IFashion-IFashionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFashion-IFashionTests.debug.xcconfig"; path = "Target Support Files/Pods-IFashion-IFashionTests/Pods-IFashion-IFashionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = IFashion/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6A90A6327174400004FD55B /* NotoSansMono-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono-Light.ttf"; sourceTree = "<group>"; };
+		A6A90A6427174401004FD55B /* NotoSansMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono-Regular.ttf"; sourceTree = "<group>"; };
+		A6A90A6527174401004FD55B /* NotoSansMono-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono-Thin.ttf"; sourceTree = "<group>"; };
+		A6A90A6627174401004FD55B /* NotoSansMono-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono-ExtraLight.ttf"; sourceTree = "<group>"; };
+		A6A90A6727174401004FD55B /* NotoSansMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono-Medium.ttf"; sourceTree = "<group>"; };
+		A6A90A6827174401004FD55B /* NotoSansMono-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono-SemiBold.ttf"; sourceTree = "<group>"; };
+		A6A90A6927174401004FD55B /* NotoSansMono-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono-Black.ttf"; sourceTree = "<group>"; };
+		A6A90A6A27174401004FD55B /* NotoSansMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono-Bold.ttf"; sourceTree = "<group>"; };
+		A6A90A6B27174401004FD55B /* NotoSansMono-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMono-ExtraBold.ttf"; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-IFashion-IFashionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IFashion-IFashionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A881CF5CF3F2B244570E2A /* Pods-IFashion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFashion.debug.xcconfig"; path = "Target Support Files/Pods-IFashion/Pods-IFashion.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-IFashion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFashion.release.xcconfig"; path = "Target Support Files/Pods-IFashion/Pods-IFashion.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +134,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				A6A90A62271743A5004FD55B /* Resources */,
 				13B07FAE1A68108700A75B9A /* IFashion */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* IFashionTests */,
@@ -137,6 +156,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A6A90A62271743A5004FD55B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6A90A6927174401004FD55B /* NotoSansMono-Black.ttf */,
+				A6A90A6A27174401004FD55B /* NotoSansMono-Bold.ttf */,
+				A6A90A6B27174401004FD55B /* NotoSansMono-ExtraBold.ttf */,
+				A6A90A6627174401004FD55B /* NotoSansMono-ExtraLight.ttf */,
+				A6A90A6327174400004FD55B /* NotoSansMono-Light.ttf */,
+				A6A90A6727174401004FD55B /* NotoSansMono-Medium.ttf */,
+				A6A90A6427174401004FD55B /* NotoSansMono-Regular.ttf */,
+				A6A90A6827174401004FD55B /* NotoSansMono-SemiBold.ttf */,
+				A6A90A6527174401004FD55B /* NotoSansMono-Thin.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +180,6 @@
 				6C97AB639B58BBB4B15BBE30 /* Pods-IFashion-IFashionTests.debug.xcconfig */,
 				1D0AE47A65C8663E3B452821 /* Pods-IFashion-IFashionTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -243,8 +277,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A90A7227174401004FD55B /* NotoSansMono-Black.ttf in Resources */,
+				A6A90A7427174401004FD55B /* NotoSansMono-ExtraBold.ttf in Resources */,
+				A6A90A6F27174401004FD55B /* NotoSansMono-ExtraLight.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				A6A90A6E27174401004FD55B /* NotoSansMono-Thin.ttf in Resources */,
+				A6A90A6D27174401004FD55B /* NotoSansMono-Regular.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A6A90A6C27174401004FD55B /* NotoSansMono-Light.ttf in Resources */,
+				A6A90A7327174401004FD55B /* NotoSansMono-Bold.ttf in Resources */,
+				A6A90A7027174401004FD55B /* NotoSansMono-Medium.ttf in Resources */,
+				A6A90A7127174401004FD55B /* NotoSansMono-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +604,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -627,7 +670,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

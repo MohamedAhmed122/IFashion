@@ -1,5 +1,6 @@
 import React from 'react';
-import {Text, View, Button} from 'react-native';
+import {View, Button} from 'react-native';
+import {NotoSansMonoText} from '../../components';
 
 import {
   ShoppingStoreStackParams,
@@ -14,7 +15,9 @@ export const StoresScreen: React.FC<StoreScreenProps> = ({navigation}) => {
   return (
     <View
       style={{alignItems: 'center', justifyContent: 'center', height: '100%'}}>
-      <Text>Store Screen</Text>
+      <NotoSansMonoText fontFamily={'NotoSansMono-Bold'}>
+        Store Details
+      </NotoSansMonoText>
       <Button
         title="Go to Store Detail Screen"
         onPress={() => {
