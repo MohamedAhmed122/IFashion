@@ -4,10 +4,10 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 //TYPES
 import {ProfileParams, ProfileParamsParamList} from './interface';
 //SCREENS
-import {ProfileScreen} from '../../screens/ProfileScreen';
-import {CreateProfileScreen} from '../../screens/CreateProfileScreen';
-import {EditProfileScreen} from '../../screens/EditProfileScreen';
-import {SettingsScreen} from '../../screens/SettingsScreen';
+import {ProfileScreen} from 'screens/ProfileScreen';
+import {CreateProfileScreen} from 'screens/CreateProfileScreen';
+import {EditProfileScreen} from 'screens/EditProfileScreen';
+import {SettingsScreen} from 'screens/SettingsScreen';
 
 const Stack = createNativeStackNavigator<ProfileParamsParamList>();
 

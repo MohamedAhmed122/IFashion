@@ -1,8 +1,8 @@
 import {Dispatch} from 'redux';
 
-import {getShops} from '../../api/store/getShops';
+import {getShops} from 'api/store/getShops';
 import {Action, ActionType} from './types';
-import {errorHandler} from '../../utils/errorHandler';
+import {errorHandler} from 'utils/errorHandler';
 
 export const getShopsList = () => async (dispatch: Dispatch<Action>) => {
   dispatch({type: ActionType.SHOPS_LOADING});

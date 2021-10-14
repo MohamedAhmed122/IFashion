@@ -4,9 +4,9 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 //TYPES
 import {CheckoutParams, CheckoutParamList} from './interface';
 //SCREENS
-import {PaymentScreen} from '../../screens/PaymentScreen';
-import {CartScreen} from '../../screens/CartScreen';
-import {ReviewScreen} from '../../screens/ReviewScreen';
+import {PaymentScreen} from 'screens/PaymentScreen';
+import {CartScreen} from 'screens/CartScreen';
+import {ReviewScreen} from 'screens/ReviewScreen';
 
 const Stack = createNativeStackNavigator<CheckoutParamList>();
 

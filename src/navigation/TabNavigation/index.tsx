@@ -6,7 +6,7 @@ import ShoppingStoreStack from '../ShoppingStoreStack';
 import {ChatStack} from '../ChatStack';
 import {CheckoutStack} from '../CheckoutStack';
 import {FashionStack} from '../FashionStack';
-import {SettingsScreen} from '../../screens/SettingsScreen';
+import {SettingsScreen} from 'screens/SettingsScreen';
 
 const Tab = createBottomTabNavigator<TabNavigationParamList>();
 export default function TabNavigation() {

@@ -7,10 +7,10 @@ import {
   ShoppingStoreStackParamsParamList,
 } from './interface';
 //SCREENS
-import {StoreScreen} from '../../screens/StoreScreen';
-import {StoresScreen} from '../../screens/StoresScreen';
-import {ShoppingItemsScreen} from '../../screens/ShoppingItemsScreen';
-import {ShoppingItemDetailsScreen} from '../../screens/ShoppingItemDetailsScreen';
+import {StoreScreen} from 'screens/StoreScreen';
+import {StoresScreen} from 'screens/StoresScreen';
+import {ShoppingItemsScreen} from 'screens/ShoppingItemsScreen';
+import {ShoppingItemDetailsScreen} from 'screens/ShoppingItemDetailsScreen';
 
 const Stack = createNativeStackNavigator<ShoppingStoreStackParamsParamList>();
 

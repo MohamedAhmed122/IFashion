@@ -1,12 +1,9 @@
 import React from 'react';
 import {View, Button} from 'react-native';
 
-import {AppText} from '../../components';
-import {
-  RootNavigationProp,
-  RootStackParam,
-} from '../../navigation/Root/interface';
-import {Stacks} from '../../navigation/Stacks';
+import {AppText} from 'components';
+import {RootNavigationProp, RootStackParam} from 'navigation/Root/interface';
+import {Stacks} from 'navigation/Stacks';
 
 interface StoreScreenProps {
   navigation: RootNavigationProp<RootStackParam.ShoppingStoreStack>;
