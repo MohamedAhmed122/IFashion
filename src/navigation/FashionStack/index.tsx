@@ -2,29 +2,27 @@ import React from 'react';
 //Navigation
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 //TYPES
-import {FashionParams, FashionParamList} from './interface';
+import {FashionistaParams, FashionistaParamsList} from './interface';
 //SCREENS
 import {FashionistaScreen} from '../../screens/FashionistaScreen';
 import {FashionistaDetailScreen} from '../../screens/FashionistaDetailScreen';
 
-const Stack = createNativeStackNavigator<FashionParamList>();
+const Stack = createNativeStackNavigator<FashionistaParamsList>();
 
-const FashionStack = () => {
+export const FashionStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
       }}>
       <Stack.Screen
-        name={FashionParams.Fashionista}
+        name={FashionistaParams.Fashionista}
         component={FashionistaScreen}
       />
       <Stack.Screen
-        name={FashionParams.FashionistaDetail}
+        name={FashionistaParams.FashionistaDetail}
         component={FashionistaDetailScreen}
       />
     </Stack.Navigator>
   );
 };
-
-export default FashionStack;

@@ -8,6 +8,7 @@ export enum ShoppingStoreStackParams {
   Store = 'Store',
   ShoppingItems = 'ShoppingItems',
   ShoppingItem = 'ShoppingItem',
+  ChatSettings = 'ChatSettings',
 }
 
 export type ShoppingStoreStackParamsParamList = {
@@ -15,12 +16,11 @@ export type ShoppingStoreStackParamsParamList = {
   [ShoppingStoreStackParams.Store]: NO_PARAMS;
   [ShoppingStoreStackParams.ShoppingItems]: NO_PARAMS;
   [ShoppingStoreStackParams.ShoppingItem]: NO_PARAMS;
+  [ShoppingStoreStackParams.ChatSettings]: NO_PARAMS;
 };
 
-export type RootNavigationProp<P extends ShoppingStoreStackParams> =
-  StackNavigationProp<ShoppingStoreStackParamsParamList, P>;
+export type ShoppingNavigationProp<ParamList extends ShoppingStoreStackParams> =
+  StackNavigationProp<ShoppingStoreStackParamsParamList, ParamList>;
 
-export type RootRouteProp<P extends ShoppingStoreStackParams> = RouteProp<
-  ShoppingStoreStackParamsParamList,
-  P
->;
+export type ShoppingRouteProp<ParamList extends ShoppingStoreStackParams> =
+  RouteProp<ShoppingStoreStackParamsParamList, ParamList>;

@@ -11,7 +11,7 @@ import {SettingsScreen} from '../../screens/SettingsScreen';
 
 const Stack = createNativeStackNavigator<ProfileParamsParamList>();
 
-const AppNavigator = () => {
+export const ProfileStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -30,5 +30,3 @@ const AppNavigator = () => {
     </Stack.Navigator>
   );
 };
-
-export default AppNavigator;

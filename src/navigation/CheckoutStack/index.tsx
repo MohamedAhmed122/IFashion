@@ -10,7 +10,7 @@ import {ReviewScreen} from '../../screens/ReviewScreen';
 
 const Stack = createNativeStackNavigator<CheckoutParamList>();
 
-const CheckoutStack = () => {
+export const CheckoutStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -22,5 +22,3 @@ const CheckoutStack = () => {
     </Stack.Navigator>
   );
 };
-
-export default CheckoutStack;

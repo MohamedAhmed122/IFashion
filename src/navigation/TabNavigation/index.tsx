@@ -3,9 +3,9 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {TabNavigationParams, TabNavigationParamList} from './interface';
 
 import ShoppingStoreStack from '../ShoppingStoreStack';
-import ChatStack from '../ChatStack';
-import CheckoutStack from '../CheckoutStack';
-import FashionStack from '../FashionStack';
+import {ChatStack} from '../ChatStack';
+import {CheckoutStack} from '../CheckoutStack';
+import {FashionStack} from '../FashionStack';
 import {SettingsScreen} from '../../screens/SettingsScreen';
 
 const Tab = createBottomTabNavigator<TabNavigationParamList>();

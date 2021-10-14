@@ -15,12 +15,10 @@ export type CheckoutParamList = {
   [CheckoutParams.Review]: NO_PARAMS;
 };
 
-export type RootNavigationProp<P extends CheckoutParams> = StackNavigationProp<
-  CheckoutParamList,
-  P
->;
+export type CheckoutNavigationProp<ParamList extends CheckoutParams> =
+  StackNavigationProp<CheckoutParamList, ParamList>;
 
-export type RootRouteProp<P extends CheckoutParams> = RouteProp<
+export type CheckoutRouteProp<ParamList extends CheckoutParams> = RouteProp<
   CheckoutParamList,
-  P
+  ParamList
 >;

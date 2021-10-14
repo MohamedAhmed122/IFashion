@@ -10,7 +10,7 @@ import {ChatSettingsScreen} from '../../screens/ChatSettingsScreen';
 
 const Stack = createNativeStackNavigator<ChatParamList>();
 
-const ChatStack = () => {
+export const ChatStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -25,5 +25,3 @@ const ChatStack = () => {
     </Stack.Navigator>
   );
 };
-
-export default ChatStack;

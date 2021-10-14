@@ -17,12 +17,10 @@ export type ProfileParamsParamList = {
   [ProfileParams.Settings]: NO_PARAMS;
 };
 
-export type RootNavigationProp<P extends ProfileParams> = StackNavigationProp<
-  ProfileParamsParamList,
-  P
->;
+export type ProfileNavigationProp<ParamList extends ProfileParams> =
+  StackNavigationProp<ProfileParamsParamList, ParamList>;
 
-export type RootRouteProp<P extends ProfileParams> = RouteProp<
+export type ProfileRouteProp<ParamList extends ProfileParams> = RouteProp<
   ProfileParamsParamList,
-  P
+  ParamList
 >;

@@ -21,9 +21,10 @@ export type ChatParamList = {
   ChatSettings: NO_PARAMS;
 };
 
-export type RootNavigationProp<P extends ChatParams> = StackNavigationProp<
-  ChatParamList,
-  P
->;
+export type ChatNavigationProp<ParamList extends ChatParams> =
+  StackNavigationProp<ChatParamList, ParamList>;
 
-export type RootRouteProp<P extends ChatParams> = RouteProp<ChatParamList, P>;
+export type ChatRouteProp<ParamList extends ChatParams> = RouteProp<
+  ChatParamList,
+  ParamList
+>;

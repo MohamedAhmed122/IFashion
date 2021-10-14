@@ -1,36 +1,41 @@
 import React from 'react';
 import {View, Button} from 'react-native';
-import {NotoSansMonoText} from '../../components';
 
+import {AppText} from '../../components';
 import {
-  ShoppingStoreStackParams,
   RootNavigationProp,
-} from '../../navigations/ShoppingStoreStack/interface';
+  RootStackParam,
+} from '../../navigation/Root/interface';
+import {Stacks} from '../../navigation/Stacks';
 
 interface StoreScreenProps {
-  navigation: RootNavigationProp<ShoppingStoreStackParams.Store>;
+  navigation: RootNavigationProp<RootStackParam.ShoppingStoreStack>;
 }
 
 export const StoresScreen: React.FC<StoreScreenProps> = ({navigation}) => {
+  console.log(Stacks.ChatStack.ChatSettings);
+
   return (
     <View
       style={{alignItems: 'center', justifyContent: 'center', height: '100%'}}>
-      <NotoSansMonoText fontFamily={'NotoSansMono-Bold'}>
-        Store Details
-      </NotoSansMonoText>
+      <AppText fontFamily={'NotoSansMono-Bold'}>Store Details</AppText>
       <Button
         title="Go to Store Detail Screen"
         onPress={() => {
-          navigation.navigate(ShoppingStoreStackParams.Store);
+          navigation.navigate(Stacks.Root.ShoppingStoreStack, {
+            screen: Stacks.ShoppingStack.ShoppingItems,
+          });
         }}
       />
 
-      {/* <Button
+      <Button
         title="Go to Chat"
         onPress={() => {
-          navigation.navigate('Chat');
+          navigation.navigate(Stacks.Root.ShoppingStoreStack, {
+            screen: Stacks.ShoppingStack.ShoppingItems,
+          });
         }}
-      /> */}
+      />
     </View>
   );
 };

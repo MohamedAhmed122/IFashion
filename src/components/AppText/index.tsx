@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleProp, TextProps, TextStyle, Text} from 'react-native';
 
-export interface NotoSansMonoProps
+export interface AppTextProps
   extends Pick<TextProps, Exclude<keyof TextProps, 'style'>> {
   style?: StyleProp<TextStyle>;
   fontFamily?:
@@ -15,8 +15,13 @@ export interface NotoSansMonoProps
     | 'NotoSansMono-Thin';
 }
 
-export const NotoSansMonoText: React.FC<NotoSansMonoProps> = ({
+export const AppText: React.FC<AppTextProps> = ({
   fontFamily = 'NotoSansMono-Regular',
   style,
   ...props
-}) => <Text style={[{fontFamily, letterSpacing: 0.1}, style]} {...props} />;
+}) => (
+  <Text
+    style={[{fontFamily, letterSpacing: 0.1, fontSize: 14}, style]}
+    {...props}
+  />
+);
