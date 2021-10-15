@@ -25,7 +25,7 @@ const ShoppingStoreStack = () => {
         component={StoresScreen}
       />
       <Stack.Screen
-        name={ShoppingStoreStackParams.Store}
+        name={ShoppingStoreStackParams.StoreDetail}
         component={StoreScreen}
       />
       <Stack.Screen

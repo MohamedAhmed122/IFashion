@@ -1,35 +1,29 @@
 import React from 'react';
 import {View, Button} from 'react-native';
-
 import {AppText} from 'components';
-import {RootNavigationProp, RootStackParam} from 'navigation/Root/interface';
+import {
+  TabNavigationParamList,
+  TabNavigationParams,
+} from 'navigation/TabNavigation/interface';
+import {StackNavigationProp} from '@react-navigation/stack';
 import {Stacks} from 'navigation/Stacks';
-
 interface StoreScreenProps {
-  navigation: RootNavigationProp<RootStackParam.ShoppingStoreStack>;
+  navigation: StackNavigationProp<
+    TabNavigationParamList,
+    TabNavigationParams.StoreTab
+  >;
 }
 
 export const StoresScreen: React.FC<StoreScreenProps> = ({navigation}) => {
-  console.log(Stacks.ChatStack.ChatSettings);
-
   return (
     <View
       style={{alignItems: 'center', justifyContent: 'center', height: '100%'}}>
       <AppText fontFamily={'NotoSansMono-Bold'}>Store Details</AppText>
       <Button
-        title="Go to Store Detail Screen"
+        title="Go to FashionistaDetail (Deferent Stack)"
         onPress={() => {
-          navigation.navigate(Stacks.Root.ShoppingStoreStack, {
-            screen: Stacks.ShoppingStack.ShoppingItems,
-          });
-        }}
-      />
-
-      <Button
-        title="Go to Chat"
-        onPress={() => {
-          navigation.navigate(Stacks.Root.ShoppingStoreStack, {
-            screen: Stacks.ShoppingStack.ShoppingItems,
+          navigation.navigate(TabNavigationParams.FashionTab, {
+            screen: Stacks.FashionStack.FashionistaDetail,
           });
         }}
       />

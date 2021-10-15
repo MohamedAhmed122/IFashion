@@ -13,28 +13,28 @@ export default function TabNavigation() {
   return (
     <Tab.Navigator screenOptions={{headerShown: false}}>
       <Tab.Screen
-        name={TabNavigationParams.Stores}
+        name={TabNavigationParams.StoreTab}
         component={ShoppingStoreStack}
         options={{
           title: 'Stores',
         }}
       />
       <Tab.Screen
-        name={TabNavigationParams.Chat}
+        name={TabNavigationParams.ChatTab}
         component={ChatStack}
         options={{
           title: 'Chat',
         }}
       />
       <Tab.Screen
-        name={TabNavigationParams.Checkout}
+        name={TabNavigationParams.CheckoutTab}
         component={CheckoutStack}
         options={{
           title: 'Checkout',
         }}
       />
       <Tab.Screen
-        name={TabNavigationParams.Fashion}
+        name={TabNavigationParams.FashionTab}
         component={FashionStack}
         options={{
           title: 'Fashion',
