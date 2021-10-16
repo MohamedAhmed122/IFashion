@@ -6,19 +6,19 @@ import {
 } from 'navigation/CheckoutStack/interface';
 import React from 'react';
 import {Text, Button} from 'react-native';
-
 interface CartScreenProps {
   navigation: StackNavigationProp<CheckoutParamList, CheckoutParams.Cart>;
 }
 
 export const CartScreen: React.FC<CartScreenProps> = ({navigation}) => {
+  let a7a;
   return (
     <Screen>
       <Button
         title="Go To Review (same Stack)"
         onPress={() => navigation.navigate(CheckoutParams.Review)}
       />
-      <Text>CartScreen</Text>
+      <>CartScreen</>
     </Screen>
   );
 };
