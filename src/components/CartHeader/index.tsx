@@ -6,10 +6,14 @@ import {IconContainer} from 'components/IconContainer';
 import {COLORS} from 'styles';
 import styles from './style';
 
-export const CartHeader = () => {
+interface CartHeaderProps {
+  title: string;
+}
+
+export const CartHeader: React.FC<CartHeaderProps> = ({title}) => {
   return (
     <View style={styles.container}>
-      <AppText style={styles.text}>My Favorites</AppText>
+      <AppText style={styles.text}>{title}</AppText>
       <IconContainer>
         <Icon name="navicon" color={COLORS.gray90} size={28} />
       </IconContainer>

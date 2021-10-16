@@ -10,7 +10,7 @@ import {
 } from 'navigation/CheckoutStack/interface';
 // RENDER && STYLES
 import {Screen} from 'common';
-import {CartHeader} from './CartHeader';
+import {CartHeader} from '../../components/CartHeader';
 import {TopTab} from 'components/TopTab';
 import {CartCard} from 'components/Card';
 
@@ -24,7 +24,7 @@ export const CartScreen: React.FC<CartScreenProps> = ({}) => {
       <FlatList
         ListHeaderComponent={() => (
           <>
-            <CartHeader />
+            <CartHeader title="My Favorite" />
             <TopTab title="Cart" />
           </>
         )}
