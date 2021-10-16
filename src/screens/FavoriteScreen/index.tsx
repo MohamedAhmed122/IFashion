@@ -1,11 +1,12 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text} from 'react-native';
+import {Screen} from 'common';
 
 interface FavoriteScreenProps {}
 export const FavoriteScreen: React.FC<FavoriteScreenProps> = () => {
   return (
-    <View>
+    <Screen>
       <Text>FavoriteScreen</Text>
-    </View>
+    </Screen>
   );
 };

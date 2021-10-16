@@ -1,12 +1,13 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text} from 'react-native';
+import {Screen} from 'common';
 
 interface SettingsScreenProps {}
 
 export const SettingsScreen: React.FC<SettingsScreenProps> = () => {
   return (
-    <View>
+    <Screen>
       <Text>SettingsScreen</Text>
-    </View>
+    </Screen>
   );
 };

@@ -1,12 +1,13 @@
+import {Screen} from 'common';
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text} from 'react-native';
 
 interface EditProfileScreenProps {}
 
 export const EditProfileScreen: React.FC<EditProfileScreenProps> = () => {
   return (
-    <View>
+    <Screen>
       <Text>EditProfileScreen</Text>
-    </View>
+    </Screen>
   );
 };

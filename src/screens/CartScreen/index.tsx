@@ -1,11 +1,12 @@
 import {StackNavigationProp} from '@react-navigation/stack';
+import {Screen} from 'common';
 
 import {
   CheckoutParamList,
   CheckoutParams,
 } from 'navigation/CheckoutStack/interface';
 import React from 'react';
-import {Text, View, Button} from 'react-native';
+import {Text, Button} from 'react-native';
 
 interface CartScreenProps {
   navigation: StackNavigationProp<CheckoutParamList, CheckoutParams.Cart>;
@@ -13,13 +14,12 @@ interface CartScreenProps {
 
 export const CartScreen: React.FC<CartScreenProps> = ({navigation}) => {
   return (
-    <View
-      style={{alignItems: 'center', justifyContent: 'center', height: '100%'}}>
+    <Screen>
       <Button
         title="Go To Review (same Stack)"
         onPress={() => navigation.navigate(CheckoutParams.Review)}
       />
       <Text>CartScreen</Text>
-    </View>
+    </Screen>
   );
 };

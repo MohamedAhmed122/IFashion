@@ -1,12 +1,13 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text} from 'react-native';
+import {Screen} from 'common';
 
 interface ChatListScreenProps {}
 
 export const ChatListScreen: React.FC<ChatListScreenProps> = () => {
   return (
-    <View>
+    <Screen>
       <Text>Chat List</Text>
-    </View>
+    </Screen>
   );
 };

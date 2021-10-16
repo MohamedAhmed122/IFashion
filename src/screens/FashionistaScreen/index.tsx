@@ -1,12 +1,13 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text} from 'react-native';
+import {Screen} from 'common';
 
 interface FashionistaScreenProps {}
 
 export const FashionistaScreen: React.FC<FashionistaScreenProps> = () => {
   return (
-    <View>
+    <Screen>
       <Text>FashionistaScreen</Text>
-    </View>
+    </Screen>
   );
 };
