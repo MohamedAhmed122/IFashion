@@ -6,7 +6,7 @@ import {
   TabNavigationParams,
 } from 'navigation/TabNavigation/interface';
 import {Stacks} from 'navigation/Stacks';
-import {AppButton, Screen} from 'common';
+import {AppButton, Loader, Screen} from 'common';
 interface StoreScreenProps {
   navigation: RootNavigation;
 }
@@ -23,6 +23,7 @@ export const StoresScreen: React.FC<StoreScreenProps> = ({navigation}) => {
         }}
       />
       <AppButton title="Hello" onPress={() => {}} />
+      <Loader defaultLoader />
     </Screen>
   );
 };
