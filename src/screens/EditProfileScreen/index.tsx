@@ -1,5 +1,5 @@
-import {Screen} from 'common';
 import React from 'react';
+import {Screen} from 'common';
 import {Text} from 'react-native';
 
 interface EditProfileScreenProps {}

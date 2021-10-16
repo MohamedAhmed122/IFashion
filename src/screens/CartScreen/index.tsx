@@ -1,6 +1,5 @@
 import {StackNavigationProp} from '@react-navigation/stack';
 import {Screen} from 'common';
-
 import {
   CheckoutParamList,
   CheckoutParams,
