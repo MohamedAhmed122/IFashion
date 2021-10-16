@@ -2,17 +2,13 @@ import React from 'react';
 import {Button} from 'react-native';
 
 import {
-  TabNavigationParamList,
+  RootNavigation,
   TabNavigationParams,
 } from 'navigation/TabNavigation/interface';
-import {StackNavigationProp} from '@react-navigation/stack';
 import {Stacks} from 'navigation/Stacks';
 import {AppButton, Screen} from 'common';
 interface StoreScreenProps {
-  navigation: StackNavigationProp<
-    TabNavigationParamList,
-    TabNavigationParams.StoreTab
-  >;
+  navigation: RootNavigation;
 }
 
 export const StoresScreen: React.FC<StoreScreenProps> = ({navigation}) => {
