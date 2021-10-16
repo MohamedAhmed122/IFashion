@@ -8,14 +8,20 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "run-p --print-label lint-eslint lint-markdown",
+    "lint-eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./",
+    "lint-markdown": "markdownlint --ignore coverage --ignore dist --ignore examples --ignore node_modules **/*.md .**/**/*.md",
+    "test": "react-scripts test",
+    "test--coverage": "yarn run test -- --coverage",
+    "typecheck": "tsc --noEmit",
+    "validate": "run-p --print-label lint typecheck test build"
   },
   "husky": {
     "hooks": {
       "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
       "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
       "post-applypatch": "echo \"[Husky] post-applypatch\"",
-      "pre-commit": "echo \"[Husky] pre-commit\""
+      "pre-commit": "lint"
     }
   },
   "dependencies": {
