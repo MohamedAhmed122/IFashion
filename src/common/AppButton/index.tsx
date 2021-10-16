@@ -1,5 +1,6 @@
 import {AppText} from 'common';
 import React from 'react';
+import {View} from 'react-native';
 import {StyleProp, TextStyle, TouchableOpacity, ViewStyle} from 'react-native';
 import {COLORS} from 'styles';
 import styles from './style';
@@ -20,6 +21,7 @@ export const AppButton: React.FC<AppButtonProps> = ({
   buttonTextStyle,
   ...props
 }) => {
+  let commit;
   return (
     <TouchableOpacity
       onPress={onPress}
