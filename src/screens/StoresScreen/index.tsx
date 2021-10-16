@@ -7,7 +7,7 @@ import {
 } from 'navigation/TabNavigation/interface';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {Stacks} from 'navigation/Stacks';
-import {Screen} from 'common';
+import {AppButton, Screen} from 'common';
 interface StoreScreenProps {
   navigation: StackNavigationProp<
     TabNavigationParamList,
@@ -26,6 +26,7 @@ export const StoresScreen: React.FC<StoreScreenProps> = ({navigation}) => {
           });
         }}
       />
+      <AppButton title="Hello" onPress={() => {}} />
     </Screen>
   );
 };
