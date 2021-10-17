@@ -1,53 +1,12 @@
-import React, {useState} from 'react';
-import {StyleSheet, Dimensions, Alert, View, Text, Image} from 'react-native';
+import React from 'react';
+import {Alert, View, Text, Image} from 'react-native';
 import {TouchableWithoutFeedback} from 'react-native-gesture-handler';
 import Animated, {
   Extrapolate,
   interpolate,
   useAnimatedStyle,
 } from 'react-native-reanimated';
-import {Stores} from 'types';
-
-const {width, height} = Dimensions.get('window');
-
-const MIN_HEIGHT = 128;
-export const MAX_HEIGHT = height;
-
-const styles = StyleSheet.create({
-  container: {
-    width,
-    height: MIN_HEIGHT,
-    justifyContent: 'flex-end',
-  },
-  picture: {
-    ...StyleSheet.absoluteFillObject,
-    width: undefined,
-    height: undefined,
-  },
-  title: {
-    color: 'white',
-    textAlign: 'center',
-    fontSize: 32,
-    fontWeight: '500',
-  },
-  titleContainer: {
-    maxHeight: MAX_HEIGHT * 0.61,
-    justifyContent: 'center',
-    flex: 1,
-  },
-  mainTitle: {
-    ...StyleSheet.absoluteFillObject,
-    justifyContent: 'center',
-    padding: 32,
-    transform: [{translateY: 64}],
-  },
-  subtitle: {
-    color: 'white',
-    textAlign: 'center',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-});
+import {MAX_HEIGHT, MIN_HEIGHT, styles} from './style';
 
 interface Item {
   title: string;

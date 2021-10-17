@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {StyleSheet, StatusBar} from 'react-native';
+import {StatusBar} from 'react-native';
 
 import Animated, {
   useAnimatedScrollHandler,
@@ -8,7 +8,9 @@ import Animated, {
 import {useDispatch, useSelector} from 'react-redux';
 import {RootState} from 'redux/rootReducer';
 import {getShopsList} from 'redux/shops/action';
-import {MAX_HEIGHT, ShopItem} from './components/ShopItem';
+import {ShopItem} from './components/ShopItem';
+import {MAX_HEIGHT} from './components/style';
+import {styles} from './style';
 
 const items = [
   {
@@ -53,6 +55,7 @@ export const StoresScreen = () => {
   const {shops, error, loading} = useSelector(
     (state: RootState) => state.shops,
   );
+
   const y = useSharedValue(0);
   const onScroll = useAnimatedScrollHandler({
     onScroll: ({contentOffset: {y: value}}) => {
@@ -71,7 +74,10 @@ export const StoresScreen = () => {
         onScroll={onScroll}
         scrollEventThrottle={16}
         snapToInterval={MAX_HEIGHT}
-        contentContainerStyle={styles.container}
+        contentContainerStyle={[
+          styles.container,
+          {height: items.length * MAX_HEIGHT},
+        ]}
         decelerationRate="fast">
         {items?.map((item, index) => (
           <ShopItem item={item} key={index} y={y} index={index} />
@@ -80,10 +86,3 @@ export const StoresScreen = () => {
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    height: items.length * MAX_HEIGHT,
-    backgroundColor: '#ffffff',
-  },
-});
