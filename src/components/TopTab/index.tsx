@@ -1,46 +1,36 @@
 import React from 'react';
 import {View, TouchableOpacity} from 'react-native';
-import {
-  RootNavigation,
-  TabNavigationParams,
-} from 'navigation/TabNavigation/interface';
-import {useNavigation} from '@react-navigation/core';
-import {CheckoutParams} from 'navigation/CheckoutStack/interface';
 
 import {AppText} from 'common';
 import styles from './style';
 
 interface TopTabProps {
-  title: string;
+  setActiveTab(type: string): void;
+  activeTab: string;
 }
 
-export const TopTab: React.FC<TopTabProps> = ({title}) => {
-  const navigation = useNavigation<RootNavigation>();
-
-  const handleNavigate = (screen: CheckoutParams) =>
-    navigation.navigate(TabNavigationParams.CheckoutTab, {screen: screen});
-
+export const TopTab: React.FC<TopTabProps> = ({activeTab, setActiveTab}) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity
         style={[
-          title === 'Cart' ? styles.activeTab : styles.tab,
+          activeTab === 'Cart' ? styles.activeTab : styles.tab,
           styles.TabLeft,
         ]}
-        onPress={() => handleNavigate(CheckoutParams.Cart)}>
+        onPress={() => setActiveTab('Cart')}>
         <AppText>Cart</AppText>
       </TouchableOpacity>
       <TouchableOpacity
-        style={title === 'Clothe' ? styles.activeTab : styles.tab}
-        onPress={() => handleNavigate(CheckoutParams.FavoriteItem)}>
+        style={activeTab === 'Clothe' ? styles.activeTab : styles.tab}
+        onPress={() => setActiveTab('Clothe')}>
         <AppText> Clothe</AppText>
       </TouchableOpacity>
       <TouchableOpacity
         style={[
-          title === 'Fashion' ? styles.activeTab : styles.tab,
+          activeTab === 'Fashion' ? styles.activeTab : styles.tab,
           styles.tabRight,
         ]}
-        onPress={() => handleNavigate(CheckoutParams.FavoriteFashion)}>
+        onPress={() => setActiveTab('Fashion')}>
         <AppText> Fashion</AppText>
       </TouchableOpacity>
     </View>

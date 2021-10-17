@@ -1,7 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
-import React from 'react';
+import React, {useState} from 'react';
 import {FlatList} from 'react-native';
-import {cartItems} from 'assets/data';
+import {cartItems, favorites} from 'assets/data';
+import {activeTypeTitle} from 'utils';
 // TYPES
 import {StackNavigationProp} from '@react-navigation/stack';
 import {
@@ -19,19 +20,21 @@ interface CartScreenProps {
 }
 
 export const CartScreen: React.FC<CartScreenProps> = ({}) => {
+  const [activeTab, setActiveTab] = useState('Cart');
+
   return (
     <Screen>
       <FlatList
         ListHeaderComponent={() => (
           <>
-            <CartHeader title="My Favorite" />
-            <TopTab title="Cart" />
+            <CartHeader title={activeTypeTitle(activeTab)} />
+            <TopTab activeTab={activeTab} setActiveTab={setActiveTab} />
           </>
         )}
         contentContainerStyle={{paddingBottom: 30}}
-        data={cartItems}
+        data={activeTab === 'Clothe' ? favorites : cartItems}
         keyExtractor={items => items.id}
-        renderItem={({item}) => <CartCard item={item} />}
+        renderItem={({item, index}) => <CartCard item={item} index={index} />}
       />
     </Screen>
   );
