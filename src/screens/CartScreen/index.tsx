@@ -9,6 +9,7 @@ import {
   CheckoutParamList,
   CheckoutParams,
 } from 'navigation/CheckoutStack/interface';
+import {CartItem} from 'types';
 // RENDER && STYLES
 import {Screen} from 'common';
 import {CartHeader} from '../../components/CartHeader';
@@ -22,8 +23,8 @@ interface CartScreenProps {
 export const CartScreen: React.FC<CartScreenProps> = ({navigation}) => {
   const [activeTab, setActiveTab] = useState('Cart');
 
-  const handleNavigateToCartDetail = () =>
-    navigation.navigate(CheckoutParams.CartDetail);
+  const handleNavigateToCartDetail = (item: CartItem): void =>
+    navigation.navigate(CheckoutParams.CartDetail, {id: item.id});
 
   return (
     <Screen>
@@ -41,7 +42,7 @@ export const CartScreen: React.FC<CartScreenProps> = ({navigation}) => {
           <CartCard
             item={item}
             index={index}
-            onItemPress={handleNavigateToCartDetail}
+            onItemPress={() => handleNavigateToCartDetail(item)}
           />
         )}
       />
