@@ -19,8 +19,11 @@ interface CartScreenProps {
   navigation: StackNavigationProp<CheckoutParamList, CheckoutParams.Cart>;
 }
 
-export const CartScreen: React.FC<CartScreenProps> = ({}) => {
+export const CartScreen: React.FC<CartScreenProps> = ({navigation}) => {
   const [activeTab, setActiveTab] = useState('Cart');
+
+  const handleNavigateToCartDetail = () =>
+    navigation.navigate(CheckoutParams.CartDetail);
 
   return (
     <Screen>
@@ -34,7 +37,13 @@ export const CartScreen: React.FC<CartScreenProps> = ({}) => {
         contentContainerStyle={{paddingBottom: 30}}
         data={activeTab === 'Clothe' ? favorites : cartItems}
         keyExtractor={items => items.id}
-        renderItem={({item, index}) => <CartCard item={item} index={index} />}
+        renderItem={({item, index}) => (
+          <CartCard
+            item={item}
+            index={index}
+            onItemPress={handleNavigateToCartDetail}
+          />
+        )}
       />
     </Screen>
   );

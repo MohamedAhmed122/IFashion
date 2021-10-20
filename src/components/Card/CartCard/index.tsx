@@ -10,21 +10,22 @@ import styles from './style';
 interface CartCardProps {
   item: CartItem;
   index: number;
+  onItemPress(): void;
 }
 
-export const CartCard: React.FC<CartCardProps> = ({item, index}) => {
+export const CartCard: React.FC<CartCardProps> = ({
+  item,
+  index,
+  onItemPress,
+}) => {
   const {image, name, price, description, isLiked} = item;
-  // 1- ZoomIn --index + 0.5
-  // 2- lightSpeedIn --index + 0.5
-  // 3- fadeInUp -- index + 1
-  // bounceIn
-  // bounceInLeft
+
   return (
     <View
       style={styles.main}
       duration={1000 * (index + 1)}
-      animation={'bounceInLeft'}>
-      <TouchableOpacity style={styles.container}>
+      animation={'fadeInUp'}>
+      <TouchableOpacity style={styles.container} onPress={onItemPress}>
         <Image source={image} resizeMode="cover" style={styles.image} />
         <View style={styles.infoContainer}>
           <Text style={styles.title}>{name} </Text>
