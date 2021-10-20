@@ -12,4 +12,7 @@ export default ScaledSheet.create({
     flex: 1,
     backgroundColor: COLORS.white,
   },
+  containerChildren: {
+    flex: 1,
+  },
 });

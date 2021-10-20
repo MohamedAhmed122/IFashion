@@ -11,7 +11,6 @@ import {StoreScreen} from 'screens/StoreScreen';
 import {StoresScreen} from 'screens/StoresScreen';
 import {ShoppingItemsScreen} from 'screens/ShoppingItemsScreen';
 import {ShoppingItemDetailsScreen} from 'screens/ShoppingItemDetailsScreen';
-import Chanel from 'Chanel';
 
 const Stack = createNativeStackNavigator<ShoppingStoreStackParamsParamList>();
 

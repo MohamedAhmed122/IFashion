@@ -18,9 +18,15 @@ interface ItemProps {
   index: number;
   y: Animated.SharedValue<number>;
   item: Item;
+  onPressItem: () => void;
 }
 
-export const ShopItem: React.FC<ItemProps> = ({y, index, item}) => {
+export const ShopItem: React.FC<ItemProps> = ({
+  y,
+  index,
+  item,
+  onPressItem,
+}) => {
   const container = useAnimatedStyle(() => ({
     height: interpolate(
       y.value,
@@ -42,7 +48,7 @@ export const ShopItem: React.FC<ItemProps> = ({y, index, item}) => {
   });
 
   return (
-    <TouchableWithoutFeedback onPress={() => Alert.alert('Pressed!')}>
+    <TouchableWithoutFeedback onPress={onPressItem}>
       <Animated.View style={[styles.container, container]}>
         <Image source={item.picture} style={styles.picture} />
         <View style={styles.titleContainer}>

@@ -1,15 +1,29 @@
 import {ScaledSheet} from 'react-native-size-matters';
+import {COLORS} from 'styles';
 
-export default ScaledSheet.create({
+export const styles = ScaledSheet.create({
   container: {
-    width: '100@s', // = scale(100)
-    height: '200@vs', // = verticalScale(200)
-    padding: '2@msr', // = Math.round(moderateScale(2))
-    margin: 5,
+    paddingHorizontal: '12@s',
+    paddingVertical: '25@vs',
   },
-  row: {
-    padding: '10@ms0.3', // = moderateScale(10, 0.3)
-    width: '50@ms', // = moderateScale(50)
-    height: '30@mvs0.3', // = moderateVerticalScale(30, 0.3)
+  storeDetailsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: '12@vs',
+  },
+  storeName: {
+    fontSize: 25,
+    lineHeight: 40,
+  },
+  storePic: {
+    width: '50@s',
+    height: '50@vs',
+    borderRadius: 25,
+    marginVertical: '12@vs',
+  },
+  category: {
+    fontSize: 14,
+    color: COLORS.grey,
   },
 });
