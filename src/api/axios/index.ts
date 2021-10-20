@@ -1,19 +1,9 @@
-import axiosPackage from 'axios';
+import axios from 'axios';
 
-export const server = {
-  live: 'http://example.rr/api/',
-};
-
-export const baseURL = server.live;
+export const baseURL = 'http://localhost:5000/api/';
 
 // TODO: add redux start token form redux persist
-const startToken = '122';
-
-export const axios = axiosPackage.create({
-  headers: {
-    Authorization: startToken ? `Bearer ${startToken}` : '',
-  },
-
+const instance = axios.create({
   baseURL,
 });
 
@@ -26,3 +16,5 @@ axios.interceptors.response.use(
     return Promise.reject(error.response);
   },
 );
+
+export {instance as axios};

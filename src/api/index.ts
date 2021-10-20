@@ -1,6 +1,5 @@
-import {ShopEndpoints} from './store/index';
+import {StoresEndpoints} from './stores/index';
 
-// Comment
-export const endpoints = {
-  shops: ShopEndpoints,
+export const Endpoints = {
+  stores: StoresEndpoints,
 };

@@ -1,3 +1,4 @@
+import {Stores} from 'types';
 export enum ActionType {
   GET_SHOPS_LIST = 'GET_SHOP_LIST',
   SEARCH_SHOPS = 'SEARCH_SHOPS',
@@ -7,7 +8,7 @@ export enum ActionType {
 
 interface GetShops {
   type: ActionType.GET_SHOPS_LIST;
-  payload: [];
+  payload: Stores[];
 }
 
 interface SearchShops {

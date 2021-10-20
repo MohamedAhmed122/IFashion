@@ -5,9 +5,17 @@ import {TabNavigationParamList} from './interface';
 import {COLORS} from 'styles';
 
 import {tabs} from './tab';
+import {getFocusedRouteNameFromRoute} from '@react-navigation/native';
 
 const Tab = createBottomTabNavigator<TabNavigationParamList>();
 export default function TabNavigation() {
+  const handleTabBarVisible = (route: any) => {
+    const routeName = getFocusedRouteNameFromRoute(route);
+    if (routeName === 'Stores') {
+      return false;
+    }
+    return true;
+  };
   return (
     <Tab.Navigator
       screenOptions={{

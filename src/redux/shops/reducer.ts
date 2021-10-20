@@ -1,7 +1,8 @@
+import {Stores} from 'types';
 import {Action, ActionType} from './types';
 
 interface ShopReducer {
-  shops: any[];
+  shops: Stores[];
   loading: boolean;
   error: string | null;
 }
