@@ -26,8 +26,8 @@ export const toastConfig = {
       {...props}
       text1Style={styles.errorText1Style}
       text2Style={styles.errorText2Style}
-      text1NumberOfLines={1}
-      text2NumberOfLines={3}
+      text1NumberOfLines={3}
+      text2NumberOfLines={4}
     />
   ),
 };

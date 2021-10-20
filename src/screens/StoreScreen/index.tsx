@@ -3,7 +3,6 @@ import {AppText, Screen} from 'common';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {COLORS} from 'styles';
 import {
-  Alert,
   FlatList,
   Image,
   ListRenderItem,
@@ -18,6 +17,7 @@ import {
   ShoppingStoreStackParams,
   ShoppingStoreStackParamsParamList,
 } from 'navigation/ShoppingStoreStack/interface';
+import Toast from 'react-native-toast-message';
 
 interface Category {
   id: number;
@@ -72,7 +72,14 @@ export const StoreScreen: React.FC<StoreScreenProps> = ({navigation}) => {
         key={item.id}
         categoryTitle={item.categoryTitle}
         categoryImageUrl={item.CategoryImage}
-        onPressCategory={() => Alert.alert('Pressed')}
+        onPressCategory={() => {
+          return Toast.show({
+            type: 'error',
+            text1: 'Opps',
+            text2: 'we are sorry the api is not ready yet',
+            position: 'bottom',
+          });
+        }}
       />
     );
   };

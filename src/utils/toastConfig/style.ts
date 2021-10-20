@@ -1,4 +1,5 @@
 import {ScaledSheet} from 'react-native-size-matters';
+import {COLORS} from 'styles';
 
 export const styles = ScaledSheet.create({
   successText1Style: {
@@ -11,10 +12,16 @@ export const styles = ScaledSheet.create({
   contentContainer: {
     paddingHorizontal: '15@vs',
   },
+
   errorText1Style: {
-    fontSize: '17@s',
+    fontSize: '14@s',
+    paddingTop: '10@vs',
+    fontFamily: 'NotoSansMono-Regular',
   },
   errorText2Style: {
-    fontSize: '15@s',
+    fontSize: '12@s',
+    color: COLORS.grey,
+    fontFamily: 'NotoSansMono-Regular',
+    paddingBottom: '12@vs',
   },
 });
