@@ -1,3 +1,6 @@
+import {ShoppingItem} from 'screens/ShoppingItemsScreen';
+import {Category} from 'screens/StoreScreen';
+
 export const cartItems = [
   {
     id: '1',
@@ -123,5 +126,72 @@ export const reviews = [
     id: 3,
     type: '😇',
     color: '#63cdfa',
+  },
+];
+
+export const categories: Category[] = [
+  {
+    id: 0,
+    categoryTitle: 'Shirts',
+    CategoryImage:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
+  },
+  {
+    id: 1,
+    categoryTitle: 'T-shirts',
+    CategoryImage:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg',
+  },
+  {
+    id: 2,
+    categoryTitle: 'Jeans',
+    CategoryImage:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
+  },
+  {
+    id: 3,
+    categoryTitle: 'Jackets',
+    CategoryImage:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg',
+  },
+  {
+    id: 4,
+    categoryTitle: 'Shoes',
+    CategoryImage:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
+  },
+];
+export const shoppingItems: ShoppingItem[] = [
+  {
+    id: 0,
+    itemName: 'Shirts',
+    itemPrice: 100,
+    currency: 'USD',
+    itemImage:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
+  },
+  {
+    id: 1,
+    itemName: 'Shirts',
+    itemPrice: 100,
+    currency: 'USD',
+    itemImage:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
+  },
+  {
+    id: 2,
+    itemName: 'Shirts',
+    itemPrice: 100,
+    currency: 'USD',
+    itemImage:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
+  },
+  {
+    id: 3,
+    itemName: 'Shirts',
+    itemPrice: 100,
+    currency: 'USD',
+    itemImage:
+      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
   },
 ];

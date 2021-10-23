@@ -14,7 +14,7 @@ export enum COLORS {
   black = '#000000',
   gray90 = '#E5E5E5',
   seaGreen = '#23B55D',
-  whiteSmoke = '#F1F1F1',
+  seaShell = '#F1F1F1',
   jellyBean = '#2C9B9F',
   limeGreen = '#ABD00D',
   selectiveYellow = '#FBBA08',
@@ -24,4 +24,6 @@ export enum COLORS {
   orange = '#F18809',
   dimGray = '#6A6A6A',
   darkBlue = '#333333',
+  whiteSmoke = '#f6f6f6',
+  softPeach = '#eeeeee',
 }
