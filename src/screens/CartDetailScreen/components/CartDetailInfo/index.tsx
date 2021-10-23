@@ -9,22 +9,41 @@ interface CartInfoProps {
   isSizeSelected: boolean;
   onPress(): void;
   cartItem?: CartItem;
+  isFashionista: boolean;
 }
 
 export const CartInfo: React.FC<CartInfoProps> = ({
   isSizeSelected,
   onPress,
   cartItem,
+  isFashionista,
 }) => {
   return (
     <View style={styles.container}>
       <AppText style={styles.desc}>{cartItem?.description}</AppText>
       <AppButton
-        title={`Buy for ${cartItem?.price}$ `}
+        title={
+          isFashionista
+            ? `Chat with${cartItem?.name}`
+            : `Buy for ${cartItem?.price}$ `
+        }
         onPress={onPress}
-        color={isSizeSelected ? COLORS.selectiveYellow : COLORS.quicksilver}
+        color={
+          isFashionista
+            ? COLORS.selectiveYellow
+            : isSizeSelected
+            ? COLORS.selectiveYellow
+            : COLORS.quicksilver
+        }
         buttonStyle={styles.btn}
       />
+      {isFashionista && (
+        <AppButton
+          title="Visit Fashionista Profile"
+          onPress={() => {}}
+          color={COLORS.jellyBean}
+        />
+      )}
     </View>
   );
 };

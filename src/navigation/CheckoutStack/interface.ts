@@ -11,7 +11,7 @@ export type CheckoutParamList = {
   Cart: NO_PARAMS;
   Payment: NO_PARAMS;
   Review: NO_PARAMS;
-  CartDetail: {id: string};
+  CartDetail: {id: string; key: string};
 };
 
 export type cartDetailParams = {

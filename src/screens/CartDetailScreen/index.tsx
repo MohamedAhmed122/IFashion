@@ -23,7 +23,7 @@ export const CartDetailScreen: React.FC<CartDetailScreenProps> = ({
   navigation,
   route,
 }) => {
-  const {id} = route.params;
+  const {id, key} = route.params;
   // Local State
   const [selectSize, setSelectSize] = useState<null | string>(null);
   const [isFavoriteActive, setIsFavoriteActive] = useState(true);
@@ -54,11 +54,14 @@ export const CartDetailScreen: React.FC<CartDetailScreenProps> = ({
         isFavoriteActive={isFavoriteActive}
         cartItem={cartItem}
       />
-      <CartSizes selectSize={selectSize} setSelectSize={setSelectSize} />
+      {key === 'Favorite' && (
+        <CartSizes selectSize={selectSize} setSelectSize={setSelectSize} />
+      )}
       <CartInfo
         cartItem={cartItem}
         isSizeSelected={Boolean(selectSize)}
         onPress={handleBuyItem}
+        isFashionista={key === 'Fashion'}
       />
     </Screen>
   );

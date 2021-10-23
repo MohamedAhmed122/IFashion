@@ -23,8 +23,10 @@ interface CartScreenProps {
 export const CartScreen: React.FC<CartScreenProps> = ({navigation}) => {
   const [activeTab, setActiveTab] = useState('Cart');
 
-  const handleNavigateToCartDetail = (item: CartItem): void =>
-    navigation.navigate(CheckoutParams.CartDetail, {id: item.id});
+  const handleNavigateToCartDetail = (item: CartItem): void => {
+    let key = activeTab === 'Fashion' ? 'Fashion' : 'Favorite';
+    navigation.navigate(CheckoutParams.CartDetail, {id: item.id, key});
+  };
 
   return (
     <Screen>
