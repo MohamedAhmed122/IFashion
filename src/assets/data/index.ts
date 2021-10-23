@@ -107,3 +107,21 @@ export const items = [
     picture: require('assets/Image/chase-fade-Pb13EUxzMDw-unsplash.jpg'),
   },
 ];
+
+export const reviews = [
+  {
+    id: 2,
+    type: '😡',
+    color: '#800000',
+  },
+  {
+    id: 1,
+    type: '😂',
+    color: 'orange',
+  },
+  {
+    id: 3,
+    type: '😇',
+    color: '#63cdfa',
+  },
+];

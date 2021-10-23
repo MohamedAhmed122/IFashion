@@ -36,7 +36,7 @@ export const CartDetailScreen: React.FC<CartDetailScreenProps> = ({
 
   const handleBuyItem = () => {
     if (selectSize !== null) {
-      navigation.navigate(CheckoutParams.Payment);
+      navigation.navigate(CheckoutParams.Review);
     } else {
       Toast.show({
         type: 'error',

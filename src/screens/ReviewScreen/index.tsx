@@ -1,13 +1,27 @@
 import React from 'react';
-import {Text} from 'react-native';
-import {Screen} from 'common';
+import {FlatList, View, Dimensions} from 'react-native';
+import {reviews} from 'assets/data';
+import {RenderItem} from './RenderItem';
+import styles from './style';
+
+const {width} = Dimensions.get('window');
 
 interface ReviewScreenProps {}
 
 export const ReviewScreen: React.FC<ReviewScreenProps> = () => {
   return (
-    <Screen>
-      <Text>ReviewScreen</Text>
-    </Screen>
+    <View style={styles.screen}>
+      <FlatList
+        showsHorizontalScrollIndicator={false}
+        horizontal={true}
+        disableIntervalMomentum={true}
+        decelerationRate={0}
+        snapToInterval={width}
+        snapToAlignment={'center'}
+        data={reviews}
+        keyExtractor={items => items.id.toString()}
+        renderItem={({item}) => <RenderItem item={item} />}
+      />
+    </View>
   );
 };
