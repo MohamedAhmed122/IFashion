@@ -1,13 +1,30 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {ChatHeader, ChatList} from './components';
+import {chatList} from 'assets/data';
+import {FlatList} from 'react-native';
 import {Screen} from 'common';
+import styles from './style';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {ChatParamList, ChatParams} from 'navigation/ChatStack/interface';
 
-interface ChatListScreenProps {}
+interface ChatListScreenProps {
+  navigation: StackNavigationProp<ChatParamList, ChatParams.ChatList>;
+}
 
-export const ChatListScreen: React.FC<ChatListScreenProps> = () => {
+export const ChatListScreen: React.FC<ChatListScreenProps> = ({navigation}) => {
+  const handleNavigate = (id: string): void =>
+    navigation.navigate(ChatParams.Chat, {id});
   return (
     <Screen>
-      <Text>Chat List</Text>
+      <FlatList
+        ListHeaderComponent={() => <ChatHeader />}
+        contentContainerStyle={styles.contentContainerStyle}
+        data={chatList}
+        keyExtractor={items => items.id}
+        renderItem={({item}) => (
+          <ChatList item={item} onPress={handleNavigate} />
+        )}
+      />
     </Screen>
   );
 };

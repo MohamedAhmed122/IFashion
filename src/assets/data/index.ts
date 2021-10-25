@@ -195,3 +195,40 @@ export const shoppingItems: ShoppingItem[] = [
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
   },
 ];
+
+// ChatList
+
+export const chatList = [
+  {
+    id: '1',
+    username: 'Mohamed Youssef',
+    msg: "Hey, buddy! How you're doing? ",
+    msgNum: 2,
+    isActive: true,
+    image: require('assets/Image/christopher-campbell-A3QXXEfcA1U-unsplash.jpg'),
+  },
+  {
+    id: '2',
+    username: 'Ahmed Hamed',
+    msg: "I'm Good",
+    msgNum: 0,
+    isActive: false,
+    image: require('assets/Image/sweatShirt.jpg'),
+  },
+  {
+    id: '3',
+    username: 'Jhone Doe',
+    msg: "What's up?",
+    msgNum: 1,
+    image: require('assets/Image/t-shirt.jpg'),
+    isActive: true,
+  },
+  {
+    id: '4',
+    username: 'Anton',
+    msg: "Hey, buddy! How you're doing? ",
+    msgNum: 0,
+    isActive: false,
+    image: require('assets/Image/christopher-campbell-A3QXXEfcA1U-unsplash.jpg'),
+  },
+];

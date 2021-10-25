@@ -16,8 +16,8 @@ export const ChatStack = () => {
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name={ChatParams.Chat} component={ChatScreen} />
       <Stack.Screen name={ChatParams.ChatList} component={ChatListScreen} />
+      <Stack.Screen name={ChatParams.Chat} component={ChatScreen} />
       <Stack.Screen
         name={ChatParams.ChatSettings}
         component={ChatSettingsScreen}

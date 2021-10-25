@@ -2,7 +2,6 @@ export enum COLORS {
   aqua = '#1B86C5',
   grey = '#666666',
   lightGrey = '#D0D0D0',
-
   denim = '#1A5CAA',
   quicksilver = '#9c9c9c',
   azure = '#0043A4',
@@ -26,4 +25,7 @@ export enum COLORS {
   darkBlue = '#333333',
   whiteSmoke = '#f6f6f6',
   softPeach = '#eeeeee',
+  lightYellow = '#f8de95',
+  lightRed = '#f3eaea',
+  lighterGreen = '#e4f1ec',
 }

@@ -16,7 +16,7 @@ export const TabBarIcon: React.FC = () => {
 
   const handlePress = () =>
     navigation.navigate(TabNavigationParams.ChatTab, {
-      screen: Stacks.ChatStack.Chat,
+      screen: Stacks.ChatStack.ChatList,
     });
 
   return (

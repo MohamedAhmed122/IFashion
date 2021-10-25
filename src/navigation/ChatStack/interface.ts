@@ -7,7 +7,7 @@ export enum ChatParams {
 }
 
 export type ChatParamList = {
-  Chat: NO_PARAMS;
+  Chat: {id: string};
   ChatList: NO_PARAMS;
   ChatSettings: NO_PARAMS;
 };
