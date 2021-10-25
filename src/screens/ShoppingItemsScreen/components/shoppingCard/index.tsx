@@ -6,10 +6,9 @@ import {COLORS} from 'styles';
 import Icon from 'react-native-vector-icons/Entypo';
 import {styles} from './style';
 
-interface ShoppingCardProps {
-  item: ShoppingItem;
-}
-export const ShoppingCard: React.FC<ShoppingCardProps> = ({item}) => {
+interface ShoppingCardProps extends ShoppingItem {}
+
+export const ShoppingCard: React.FC<ShoppingCardProps> = ({...item}) => {
   return (
     <>
       <View style={styles.imageContainer}>

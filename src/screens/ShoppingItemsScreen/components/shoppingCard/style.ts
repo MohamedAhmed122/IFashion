@@ -7,7 +7,6 @@ const {width, height} = Dimensions.get('window');
 export const styles = ScaledSheet.create({
   container: {
     paddingVertical: '12@vs',
-    paddingHorizontal: '16@s',
   },
   TouchableOpacityStyle: {
     paddingBottom: '20@vs',
@@ -15,14 +14,14 @@ export const styles = ScaledSheet.create({
   imageContainer: {
     width: width * 0.5 - 20,
     justifyContent: 'center',
-    marginHorizontal: '10@vs',
+    marginHorizontal: '5@vs',
     marginVertical: '20@vs',
     flexDirection: 'column',
     borderRadius: 20,
   },
   imageStyle: {
     width: width * 0.5 - 20,
-    height: height * 0.5 - 100,
+    height: height * 0.3,
     borderRadius: 20,
   },
   contentContainer: {

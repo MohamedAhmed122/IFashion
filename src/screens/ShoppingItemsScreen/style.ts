@@ -12,4 +12,8 @@ export default ScaledSheet.create({
     width: '50@ms', // = moderateScale(50)
     height: '30@mvs0.3', // = moderateVerticalScale(30, 0.3)
   },
+
+  contentContainerStyle: {
+    alignItems: 'center',
+  },
 });

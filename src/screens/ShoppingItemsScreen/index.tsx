@@ -9,6 +9,7 @@ import {
 import {ShoppingItemHeader} from './components/ShoppingItemHeader';
 import {ShoppingCard} from './components/shoppingCard';
 import {shoppingItems} from 'assets/data';
+import styles from './style';
 
 interface ShoppingItemsScreenProps {
   navigation: StackNavigationProp<
@@ -29,7 +30,7 @@ export const ShoppingItemsScreen: React.FC<ShoppingItemsScreenProps> = ({
   navigation,
 }) => {
   const renderItem: ListRenderItem<ShoppingItem> = ({item}) => {
-    return <ShoppingCard item={item} />;
+    return <ShoppingCard {...item} />;
   };
   return (
     <Screen>
@@ -40,6 +41,7 @@ export const ShoppingItemsScreen: React.FC<ShoppingItemsScreenProps> = ({
         searchBarValue={''}
       />
       <FlatList
+        contentContainerStyle={styles.contentContainerStyle}
         data={shoppingItems}
         numColumns={2}
         keyExtractor={item => String(item.id)}
