@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text} from 'react-native';
-import {Screen} from 'common';
+import {AppButton, Screen} from 'common';
 import {StackNavigationProp} from '@react-navigation/stack';
 
 import {
@@ -15,10 +15,18 @@ interface FashionistaScreenProps {
   >;
 }
 
-export const FashionistaScreen: React.FC<FashionistaScreenProps> = () => {
+export const FashionistaScreen: React.FC<FashionistaScreenProps> = ({
+  navigation,
+}) => {
   return (
     <Screen>
       <Text>FashionistaScreen</Text>
+      <AppButton
+        title="Go Fashion Detail "
+        onPress={() => {
+          navigation.navigate(FashionistaParams.FashionistaDetail);
+        }}
+      />
     </Screen>
   );
 };
